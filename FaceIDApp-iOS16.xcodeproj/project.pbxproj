@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093AD030295ED59D00DDE884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AD02F295ED59D00DDE884 /* AppDelegate.swift */; };
+		093AD032295ED59D00DDE884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AD031295ED59D00DDE884 /* SceneDelegate.swift */; };
+		093AD034295ED59D00DDE884 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AD033295ED59D00DDE884 /* ViewController.swift */; };
+		093AD037295ED59D00DDE884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093AD035295ED59D00DDE884 /* Main.storyboard */; };
+		093AD039295ED59E00DDE884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093AD038295ED59E00DDE884 /* Assets.xcassets */; };
+		093AD03C295ED59E00DDE884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093AD03A295ED59E00DDE884 /* LaunchScreen.storyboard */; };
+		097130F82968138A00F1B10A /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 097130F72968138A00F1B10A /* GoogleService-Info-3.plist */; };
+		09C49627295EFB3500086AB4 /* FacialGestureCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C49626295EFB3500086AB4 /* FacialGestureCameraView.swift */; };
+		09D357F9295EDF94004A2175 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 09D357F8295EDF94004A2175 /* FirebaseFirestore */; };
+		09D357FB295EDF94004A2175 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D357FA295EDF94004A2175 /* FirebaseFirestoreSwift */; };
+		09D357FD295EDF94004A2175 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 09D357FC295EDF94004A2175 /* FirebaseMLModelDownloader */; };
+		D144375FBECE8106CA70ABC2 /* Pods_FaceIDApp_iOS16.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E556A7318E73928F4B180 /* Pods_FaceIDApp_iOS16.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05CB5A64672A7CA2270F399A /* Pods-FaceIDApp-iOS16.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceIDApp-iOS16.debug.xcconfig"; path = "Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16.debug.xcconfig"; sourceTree = "<group>"; };
+		093AD02C295ED59D00DDE884 /* FaceIDApp-iOS16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FaceIDApp-iOS16.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		093AD02F295ED59D00DDE884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		093AD031295ED59D00DDE884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		093AD033295ED59D00DDE884 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		093AD036295ED59D00DDE884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		093AD038295ED59E00DDE884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		093AD03B295ED59E00DDE884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		093AD03D295ED59E00DDE884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097130F72968138A00F1B10A /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		09C49626295EFB3500086AB4 /* FacialGestureCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialGestureCameraView.swift; sourceTree = "<group>"; };
+		9D7E556A7318E73928F4B180 /* Pods_FaceIDApp_iOS16.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceIDApp_iOS16.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC631D0CEAD9C8CEEF5AD1B5 /* Pods-FaceIDApp-iOS16.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceIDApp-iOS16.release.xcconfig"; path = "Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093AD029295ED59D00DDE884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D144375FBECE8106CA70ABC2 /* Pods_FaceIDApp_iOS16.framework in Frameworks */,
+				09D357F9295EDF94004A2175 /* FirebaseFirestore in Frameworks */,
+				09D357FB295EDF94004A2175 /* FirebaseFirestoreSwift in Frameworks */,
+				09D357FD295EDF94004A2175 /* FirebaseMLModelDownloader in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093AD023295ED59D00DDE884 = {
+			isa = PBXGroup;
+			children = (
+				093AD02E295ED59D00DDE884 /* FaceIDApp-iOS16 */,
+				093AD02D295ED59D00DDE884 /* Products */,
+				3C83909A83A95EFA6A9EF525 /* Pods */,
+				CD5203AE1DBAE531CFF96FBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		093AD02D295ED59D00DDE884 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				093AD02C295ED59D00DDE884 /* FaceIDApp-iOS16.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		093AD02E295ED59D00DDE884 /* FaceIDApp-iOS16 */ = {
+			isa = PBXGroup;
+			children = (
+				097130F72968138A00F1B10A /* GoogleService-Info-3.plist */,
+				093AD02F295ED59D00DDE884 /* AppDelegate.swift */,
+				093AD031295ED59D00DDE884 /* SceneDelegate.swift */,
+				093AD033295ED59D00DDE884 /* ViewController.swift */,
+				09C49626295EFB3500086AB4 /* FacialGestureCameraView.swift */,
+				093AD035295ED59D00DDE884 /* Main.storyboard */,
+				093AD038295ED59E00DDE884 /* Assets.xcassets */,
+				093AD03A295ED59E00DDE884 /* LaunchScreen.storyboard */,
+				093AD03D295ED59E00DDE884 /* Info.plist */,
+			);
+			path = "FaceIDApp-iOS16";
+			sourceTree = "<group>";
+		};
+		3C83909A83A95EFA6A9EF525 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05CB5A64672A7CA2270F399A /* Pods-FaceIDApp-iOS16.debug.xcconfig */,
+				EC631D0CEAD9C8CEEF5AD1B5 /* Pods-FaceIDApp-iOS16.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD5203AE1DBAE531CFF96FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E556A7318E73928F4B180 /* Pods_FaceIDApp_iOS16.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		093AD02B295ED59D00DDE884 /* FaceIDApp-iOS16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093AD040295ED59E00DDE884 /* Build configuration list for PBXNativeTarget "FaceIDApp-iOS16" */;
+			buildPhases = (
+				4A8A325A039F3F4A47509B66 /* [CP] Check Pods Manifest.lock */,
+				093AD028295ED59D00DDE884 /* Sources */,
+				093AD029295ED59D00DDE884 /* Frameworks */,
+				093AD02A295ED59D00DDE884 /* Resources */,
+				8EC4B1F2C7BADB79241A8E54 /* [CP] Embed Pods Frameworks */,
+				EAE3AA22602EABC584482288 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FaceIDApp-iOS16";
+			packageProductDependencies = (
+				09D357F8295EDF94004A2175 /* FirebaseFirestore */,
+				09D357FA295EDF94004A2175 /* FirebaseFirestoreSwift */,
+				09D357FC295EDF94004A2175 /* FirebaseMLModelDownloader */,
+			);
+			productName = "FaceIDApp-iOS16";
+			productReference = 093AD02C295ED59D00DDE884 /* FaceIDApp-iOS16.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093AD024295ED59D00DDE884 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					093AD02B295ED59D00DDE884 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 093AD027295ED59D00DDE884 /* Build configuration list for PBXProject "FaceIDApp-iOS16" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 093AD023295ED59D00DDE884;
+			packageReferences = (
+				09D357F7295EDF94004A2175 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 093AD02D295ED59D00DDE884 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093AD02B295ED59D00DDE884 /* FaceIDApp-iOS16 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		093AD02A295ED59D00DDE884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093AD03C295ED59E00DDE884 /* LaunchScreen.storyboard in Resources */,
+				093AD039295ED59E00DDE884 /* Assets.xcassets in Resources */,
+				093AD037295ED59D00DDE884 /* Main.storyboard in Resources */,
+				097130F82968138A00F1B10A /* GoogleService-Info-3.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A8A325A039F3F4A47509B66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceIDApp-iOS16-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EC4B1F2C7BADB79241A8E54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAE3AA22602EABC584482288 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceIDApp-iOS16/Pods-FaceIDApp-iOS16-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093AD028295ED59D00DDE884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093AD034295ED59D00DDE884 /* ViewController.swift in Sources */,
+				093AD030295ED59D00DDE884 /* AppDelegate.swift in Sources */,
+				093AD032295ED59D00DDE884 /* SceneDelegate.swift in Sources */,
+				09C49627295EFB3500086AB4 /* FacialGestureCameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		093AD035295ED59D00DDE884 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093AD036295ED59D00DDE884 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		093AD03A295ED59E00DDE884 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093AD03B295ED59E00DDE884 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		093AD03E295ED59E00DDE884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		093AD03F295ED59E00DDE884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093AD041295ED59E00DDE884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05CB5A64672A7CA2270F399A /* Pods-FaceIDApp-iOS16.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AA3UHVMV6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FaceIDApp-iOS16/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bedirhanaltun.FaceIDApp-iOS16";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		093AD042295ED59E00DDE884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC631D0CEAD9C8CEEF5AD1B5 /* Pods-FaceIDApp-iOS16.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AA3UHVMV6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FaceIDApp-iOS16/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bedirhanaltun.FaceIDApp-iOS16";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093AD027295ED59D00DDE884 /* Build configuration list for PBXProject "FaceIDApp-iOS16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093AD03E295ED59E00DDE884 /* Debug */,
+				093AD03F295ED59E00DDE884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093AD040295ED59E00DDE884 /* Build configuration list for PBXNativeTarget "FaceIDApp-iOS16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093AD041295ED59E00DDE884 /* Debug */,
+				093AD042295ED59E00DDE884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09D357F7295EDF94004A2175 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09D357F8295EDF94004A2175 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09D357F7295EDF94004A2175 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		09D357FA295EDF94004A2175 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09D357F7295EDF94004A2175 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		09D357FC295EDF94004A2175 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09D357F7295EDF94004A2175 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 093AD024295ED59D00DDE884 /* Project object */;
+}
